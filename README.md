@@ -1,4 +1,6 @@
-# meu-site2
+# MY-VUE-EXAMPLE
+
+Template with VUEJS and VUETIFY to use in futures projects
 
 ## Project setup
 ```
