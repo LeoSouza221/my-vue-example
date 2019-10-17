@@ -1,28 +1,20 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+<template lang="pug">
+  v-app.app(style="background: #b3d4fc; width: 100%; height: 100%;")
+    v-fade-transition(mode="out-in")
+      router-view
+    //- v-dialog(v-model="dialog" persistent max-width="200")
+    //-   v-card(flat height="200")
+    //-     div(style=`display: flex;
+    //-       justify-content: center;
+    //-       align-items: center;
+    //-       height: 100%;
+    //-       flex-direction: column;`
+    //-     )
+    //-       img(src="@/../public/img/farol_2.svg"
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+  name: 'App',
+};
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
